@@ -8,21 +8,13 @@ pragma solidity ^0.8.0;
 interface ERC721Enumerable
 {
 
-  /**
-   * @dev Returns a count of valid NFTs tracked by this contract, where each one of them has an
-   * assigned and queryable owner not equal to the zero address.
-   * @return Total supply of NFTs.
-   */
+ 
   function totalSupply()
     external
     view
     returns (uint256);
 
-  /**
-   * @dev Returns the token identifier for the `_index`th NFT. Sort order is not specified.
-   * @param _index A counter less than `totalSupply()`.
-   * @return Token id.
-   */
+ 
   function tokenByIndex(
     uint256 _index
   )
